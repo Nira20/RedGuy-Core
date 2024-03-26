@@ -1,0 +1,2 @@
+movPos()
+panimation = false

@@ -1,0 +1,1 @@
+is_angry = false
