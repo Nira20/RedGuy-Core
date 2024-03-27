@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sattack",
-    "path":"sprites/sattack/sattack.yy",
+    "name":"sslash",
+    "path":"sprites/sslash/sslash.yy",
   },
   "spriteMaskId":null,
   "visible":true,

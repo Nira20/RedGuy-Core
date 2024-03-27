@@ -27,7 +27,7 @@ if moveDir !=0 && onGround
 state = "moving"
 }
 	if attackkey && canFire{
-		var _atk_object = instance_create_depth(x,y,100,oattack);
+		var _atk_object = instance_create_depth(x,y,depth,oattack);
 		_atk_object.owner = id;
 		_atk_object.image_xscale = image_xscale;
 		canFire = false;

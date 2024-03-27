@@ -137,30 +137,7 @@ setOnGround(false)
 	{jumpKeyBuffered = 0}
 	}
 //Combat Scripts
-	function take_damage(_dir)
-{ //hit direction 1 right 0 left
-	hit_dir = _dir;
-	show_debug_message("enemy was hit");
-	hit = true;
-	state = ENEMY_STATE.HIT;
-	//add disable variable
-	alarm[0] = 20;
-	
-	is_angry = true;
-	hp -= 1
-	alarm[1] = 120;
-}
-	function apply_knockback_step()
-	{
-	var _angle = hit_dir == 1 ? knockback_angle : -knockback_angle + 180; 
-	if (!place_meeting(x, y-sprite_height, obj_Pground))  || (!place_meeting(x, y+sprite_height, obj_Pground)) {        
-        y += lengthdir_y(knockback_force, _angle);		
-    }
-	 if (!place_meeting(x+sprite_width, y, obj_Pground)) {
-		x += lengthdir_x(knockback_force, _angle);
-	}
-}
-	
+
 //Movement Scripts
 
 	function yCollisions()

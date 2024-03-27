@@ -6,7 +6,7 @@ invincible = false
 knockingback = false
 canFire = true
 livess=4
-
+damage =1
 
 
 
