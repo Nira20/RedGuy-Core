@@ -61,8 +61,32 @@ image_angle += angle_speed; // Rotate the sprite continuously
 	{
 	x_pos = (room_width - sprite_get_width(sprite)) / 2
 	}
+	function setOnGround(_val = true)
 
-
+{
+if _val == true
+{
+onGround = true
+coyoteHangTimer = coyoteHangFrames
+} else {
+	onGround = false
+	coyoteHangTimer = 0;
+	}
+}
+	function ongroundCheck(){if yspeed>=0 && place_meeting(x, y+1, owall)
+ {
+	 setOnGround(true);
+	 }}
+	function gravi()
+	{ yspeed += grav
+setOnGround(false)
+	}
+	function termVelo()
+	{
+	if (yspeed > termVel)
+{yspeed = termVel}
+	}
+ 
 //Player Input
 
 	function gamepad_check_input(_pad_num)
@@ -135,4 +159,65 @@ image_angle += angle_speed; // Rotate the sprite continuously
 	 if (!place_meeting(x+sprite_width, y, obj_Pground)) {
 		x += lengthdir_x(knockback_force, _angle);
 	}
+}
+	
+//Movement Scripts
+
+	function yCollisions()
+{var _subPixel = .5
+if place_meeting(x , y + yspeed, owall){
+	//get as close as possible to wall 
+var _pixelCheck = _subPixel * sign(yspeed)
+//while loops are dangerous
+while !place_meeting(x , y +_pixelCheck , owall) { 
+	//bonk
+	if yspeed <0 
+	{
+	jumpHoldTimer =0
+	}
+y += _pixelCheck
+}
+//this must come after pixelcheck
+yspeed = 0
+}
+}
+	function xCollisions()
+{
+var _subPixel = .5
+if place_meeting(x + xspeed, y, owall){
+	//check if slope
+	if !place_meeting(x+xspeed, y - abs(xspeed)-1, owall)
+	{
+	while place_meeting(x+xspeed, y, owall)
+	{ y-= _subPixel}
+	
+	}
+	//no slope = normal collision
+	else{ 
+		//cieling slopes
+		if !place_meeting(x+xspeed, y + abs(xspeed)+1,owall)
+		{
+			while place_meeting(x+xspeed, y, owall){
+			y += _subPixel
+		}} else {
+	//get as close as possible to wall 
+var _pixelCheck = _subPixel * sign(xspeed)
+//while loops are dangerous
+while !place_meeting(x + _pixelCheck, y, owall) {
+x += _pixelCheck }
+//this must come after pixelcheck
+xspeed = 0
+}
+	
+}  
+}
+if yspeed >=0 && !place_meeting(x+xspeed, y+1, owall) && place_meeting(x+xspeed, y +abs(xspeed)  + 1, owall)
+{
+while !place_meeting(x+xspeed, y+ _subPixel, owall)
+{
+y+= _subPixel
+}
+}
+
+
 }

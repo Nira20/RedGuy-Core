@@ -1,54 +1,49 @@
 if(hp <= 0) { instance_destroy(self);}
+// Enemy Movement script
+moveDir = rightKey
+xspeed = moveDir * moveSpeed
+distance_to_player = point_distance(x, y, target.x, target.y);
 
 
-if(place_meeting(x, y+ vsp, owall)){
-	while(!place_meeting(x, y + sign(vsp),owall)){
-		y += sign(vsp);
-	}
-	is_grounded = true;
-}
-else{
-	y += vsp;
-	is_grounded = false;
-}
-
-
-var distance_to_player = point_distance(x, y, target.x, target.y);
-switch(state){
-	
-	case ENEMY_STATE.IDLE : 
-		show_debug_message("enemy is idle");
-		// Check if the player is within the distance threshold
-	    if (distance_to_player < distance_threshold) && distance_to_player > distance_threshold/2 && !target.invincible{ //invincible can be change to hit effect too
+   if (distance_to_player < distance_threshold) && distance_to_player > distance_threshold/2{ 
 	        // Change enemy state (e.g., change sprite, behavior, etc.)
-	        state = ENEMY_STATE.CHASE; // Change this to whatever state you want
-			sprite_index = spr_appleI;			
+	        state = ENEMY_STATE.CHASE; 
+			sprite_index = chasesprite			
 	    }
-		break;
-		
-	case ENEMY_STATE.CHASE :
-		show_debug_message("enemy chasing");
-		if(!is_grounded) break;
-		//player run away
-		if(distance_to_player > distance_threshold and !is_angry){
+   if (distance_to_player > distance_threshold){
 			state = ENEMY_STATE.IDLE;
-			sprite_index = spr_apple;
-			break;
+			sprite_index = idlesprite
+			
 		}
-		
+		if (distance_to_player < distance_threshold) && distance_to_player < distance_threshold/2
+	{state = ENEMY_STATE.ATTACK
+		sprite_index= attacksprite
+	}
+image_xscale = rightKey *-1
+
+if (x >= target.x){
+	rightKey = -1
 	
-		if (x >= target.x){
-			x-=hsp
-			image_xscale = 1
-		}
+			}
 		else{
-			x+=hsp; image_xscale = -1
+			rightKey = 1
+			
 		}
-		break;
-	
-	case ENEMY_STATE.HIT :
-		//state change in alarm
-		show_debug_message("enemy in hit effect");
-		apply_knockback_step();
-		break;
-}
+//actually move
+ xCollisions()
+x += xspeed
+//check if player is on ground
+if yspeed>=0 && place_meeting(x, y+1, owall)
+ {
+	onGround=true;
+	 } else {onGround =false}
+	 //apply gravity
+	 
+ if !onGround{
+ gravi()
+ termVelo()
+ }
+
+yCollisions()
+
+ y+= yspeed

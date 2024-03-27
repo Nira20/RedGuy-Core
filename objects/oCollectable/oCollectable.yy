@@ -8,8 +8,8 @@
   "name":"oCollectable",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enviorments",
+    "path":"folders/Objects/Enviorments.yy",
   },
   "parentObjectId":null,
   "persistent":false,

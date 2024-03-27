@@ -35,48 +35,10 @@ state = "moving"
 	}
 xspeed = moveDir * moveSpeed
 
-//x collisions
-
-// scooting up to wall
-var _subPixel = .5
-if place_meeting(x + xspeed, y, owall){
-	//check if slope
-	if !place_meeting(x+xspeed, y - abs(xspeed)-1, owall)
-	{
-	while place_meeting(x+xspeed, y, owall)
-	{ y-= _subPixel}
-	
-	}
-	//no slope = normal collision
-	else{ 
-		//cieling slopes
-		if !place_meeting(x+xspeed, y + abs(xspeed)+1,owall)
-		{
-			while place_meeting(x+xspeed, y, owall){
-			y += _subPixel
-		}} else {
-	//get as close as possible to wall 
-var _pixelCheck = _subPixel * sign(xspeed)
-//while loops are dangerous
-while !place_meeting(x + _pixelCheck, y, owall) {
-x += _pixelCheck }
-//this must come after pixelcheck
-xspeed = 0
-}
-	
-}  
-}
-//go down slopes
-if yspeed >=0 && !place_meeting(x+xspeed, y+1, owall) && place_meeting(x+xspeed, y +abs(xspeed)  + 1, owall)
-{
-while !place_meeting(x+xspeed, y+ _subPixel, owall)
-{
-y+= _subPixel
-}
-}
 //actually move
+ xCollisions()
 x += xspeed
- 
+
 //apply Gravity
 if coyoteHangTimer >0
 {
@@ -84,11 +46,9 @@ coyoteHangTimer--
 } 
 else
 {
-yspeed += grav
-setOnGround(false)
+gravi()
 }
-if (yspeed > termVel)
-{yspeed = termVel}
+termVelo()
 //reset jumping count
 if onGround
 {
@@ -101,7 +61,7 @@ else
 	if jumpCount == 0 && coyoteJumpTimer <=0 {jumpCount =1}
 	
 	}
-
+ 
 
 //Initiate the jump
 if jumpKeyBuffered && jumpCount < jumpMax
@@ -135,32 +95,10 @@ if jumpHoldTimer >0
 	jumpHoldTimer --
 	
 }
-
-//y collision checks 
-var _subPixel = .5
-if place_meeting(x , y + yspeed, owall){
-	//get as close as possible to wall 
-var _pixelCheck = _subPixel * sign(yspeed)
-//while loops are dangerous
-while !place_meeting(x , y +_pixelCheck , owall) { 
-	//bonk
-	if yspeed <0 
-	{
-	jumpHoldTimer =0
-	}
-y += _pixelCheck
-}
-//this must come after pixelcheck
-yspeed = 0
-}
+yCollisions()
 
 //check if player is on ground
- if yspeed>=0 && place_meeting(x, y+1, owall)
- {
-	 setOnGround(true);
-	 }
- 
- 
+ongroundCheck()
 
  y+= yspeed
  

@@ -13,10 +13,13 @@
   "name":"oplayer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"player",
+    "path":"folders/Objects/player.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"owall",
+    "path":"objects/owall/owall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

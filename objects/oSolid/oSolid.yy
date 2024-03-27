@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"ocamera",
+  "%Name":"oSolid",
   "eventList":[],
   "managed":true,
-  "name":"ocamera",
+  "name":"oSolid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enviorments",
-    "path":"folders/Objects/Enviorments.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,

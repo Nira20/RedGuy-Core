@@ -9,18 +9,6 @@ livess=4
 
 
 
-function setOnGround(_val = true)
-
-{
-if _val == true
-{
-onGround = true
-coyoteHangTimer = coyoteHangFrames
-} else {
-	onGround = false
-	coyoteHangTimer = 0;
-	}
-}
 
 scontrolsSetup()
 //checkpoint system

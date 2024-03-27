@@ -1,1 +1,0 @@
-state = ENEMY_STATE.CHASE;

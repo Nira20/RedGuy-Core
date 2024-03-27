@@ -10,8 +10,8 @@
   "name":"oCloud",
   "overriddenProperties":[],
   "parent":{
-    "name":"GUI",
-    "path":"folders/Sprites/GUI.yy",
+    "name":"Enviorments",
+    "path":"folders/Objects/Enviorments.yy",
   },
   "parentObjectId":null,
   "persistent":false,
