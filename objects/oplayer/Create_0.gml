@@ -18,7 +18,7 @@ checkpointY = oRoomMove.y
 
 //movement, -1 left, 0 not moving, 1 right. 
 moveDir  = 0;
-moveSpeed = 10;
+moveSpeed = 12;
 xspeed = 0 //left right movement speed
 yspeed = 0 //updown movement speed
 
@@ -30,15 +30,15 @@ onGround = true;
 	jumpMax = 2;
 	jumpCount = 0;
 	jumpHoldTimer = 0;
-	jspeed[0] =-9.15 //jumpingspeed, needs to be negative
+	jspeed[0] =-10.15 //jumpingspeed, needs to be negative
 	jumpHoldFrames[0] = 18;
-	jspeed[1] =-8.15 //jumpingspeed, needs to be negative
+	jspeed[1] =-9.15 //jumpingspeed, needs to be negative
 	jumpHoldFrames[1] = 10;
 
 //Coyote Time
 //hangTime 
-coyoteHangFrames = 2
+coyoteHangFrames = 1
 coyoteHangTimer = 0;
 //jump buffer
-coyoteJumpFrames =2
+coyoteJumpFrames =1
 coyoteJumpTimer = 0 

@@ -1,0 +1,1 @@
+oplayer.sscore += ppoints

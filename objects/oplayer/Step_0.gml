@@ -54,7 +54,7 @@ if onGround
 {
 jumpCount = 0
 coyoteJumpTimer = coyoteJumpFrames;
-
+jumpHoldTimer = 0
 }
 else
 {coyoteJumpTimer--;
