@@ -1,4 +1,4 @@
-var heart_init_x = 32;
+/*var heart_init_x = 32;
 var heart_init_y  = 32;
 var heart_step_x  = 48; // if it's positive, the hearts will be drawn from left to right; if it's negative, they'll be drawn from right to left
 var heart_step_y  = 0; // if it's positive, the hearts will be drawn from top to bottom; if it's negative, they'll be drawn from bottom to top
@@ -11,7 +11,8 @@ for (var i = 0; i < hp; i++) {
     draw_sprite(spr_heart, 0, heart_x, heart_y);
 }
 draw_sprite(spr_lives,0,32,80)
-
+ var centerw  = display_get_gui_width()/2
+ var centerh  =display_get_gui_height()-60	 
 
 draw_sprite(spr_lives,0,32,80)
 if livess = 0 {
@@ -21,7 +22,7 @@ draw_sprite(spr_noLives,0,96, 80)
 
 draw_set_font(fn_CBoo48)}
 draw_set_color(c_white)
-draw_text(view_current, 32,"Score: " + string(sscore))
+draw_text(centerw, 32,"Score: " + string(sscore))
 
 if keyboard_check_released(ord("R"))
 {room_restart()}

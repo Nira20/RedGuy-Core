@@ -1,3 +1,6 @@
+//copy and paste this format for each creation code
+
+function genericPEnemy() {
 distance_threshold = 400; // Distance threshold for changing state
 state = ENEMY_STATE.IDLE;
 target = instance_find(oplayer, 0);
@@ -15,3 +18,8 @@ onGround = false;
 enum ENEMY_STATE{
 	NONE, IDLE, CHASE, ATTACK, HIT
 }
+los = false
+
+
+}
+

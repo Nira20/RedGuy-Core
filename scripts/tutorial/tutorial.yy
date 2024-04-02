@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"tutorial",
   "parent":{
-    "name":"Red_Guy PlatformerCore",
-    "path":"Red_Guy PlatformerCore.yyp",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
