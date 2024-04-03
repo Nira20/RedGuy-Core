@@ -1,6 +1,5 @@
 // Apple Stats
 function appleCreate(){
-coline = false
 chasesprite = spr_appleI
 idlesprite = spr_apple
 attacksprite = spr_appleA
@@ -20,7 +19,7 @@ rightKey = 0
 grav = .857 //falling speed
 termVel = 10 //maximum falling speed
 onGround = false;
+active = false
 
-los = false
 
 }

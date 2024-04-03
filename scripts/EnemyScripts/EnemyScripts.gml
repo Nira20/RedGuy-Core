@@ -31,7 +31,8 @@ image_xscale = rightKey *-1 }
 	function emovementX(){
 	moveDir = rightKey
 	xspeed = moveDir * moveSpeed
-if (x >= target.x){
+	
+if active && (x >= target.x){
 	rightKey = -1
 	
 			}

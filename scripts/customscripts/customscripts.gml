@@ -128,10 +128,10 @@ setOnGround(false)
 		jumpKeyBufferTimer = bufferTime;}
 
 	if jumpKeyBufferTimer >0
-	{
+	{state = "jumping"
 	jumpKeyBuffered = 1;
 	jumpKeyBufferTimer --
-	state = "jumping"
+	
 	}
 	else 
 	{jumpKeyBuffered = 0}
