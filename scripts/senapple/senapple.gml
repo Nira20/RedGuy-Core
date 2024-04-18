@@ -1,8 +1,8 @@
 // Apple Stats
 function appleCreate(){
-chasesprite = spr_appleI
-idlesprite = spr_apple
-attacksprite = spr_appleA
+chasesprite = swormcrawl
+idlesprite = swormidle
+attacksprite = awormattack
 damage = 1
 ppoints = 200
 distance_threshold = 400; // Distance threshold for changing state

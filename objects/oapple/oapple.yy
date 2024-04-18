@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_apple",
-    "path":"sprites/spr_apple/spr_apple.yy",
+    "name":"swormidle",
+    "path":"sprites/swormidle/swormidle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -18,7 +18,7 @@ if (distance_to_player < distance_threshold) && distance_to_player > distance_th
 	        state = ENEMY_STATE.CHASE; 
 			sprite_index = chasesprite			
 	    }
-   if (distance_to_player > distance_threshold){
+   if (  distance_to_player > distance_threshold){
 			state = ENEMY_STATE.IDLE;
 			sprite_index = idlesprite
 			

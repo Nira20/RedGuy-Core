@@ -67,6 +67,7 @@ else
 //Initiate the jump
 if jumpKeyBuffered && jumpCount < jumpMax
 { //reset the buffer
+	state = "jumping"
 	jumpKeyBuffered = false
 	jumpKeyBufferTimer =0
 	

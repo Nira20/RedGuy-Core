@@ -110,8 +110,7 @@ setOnGround(false)
 	function sgetControls()
 	{
 	//right left keys
-	rightKey = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(0,gp_padr)
-	leftKey = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(0,gp_padl) 
+ 
 
 
 
@@ -124,18 +123,21 @@ setOnGround(false)
 
 	//jump Key Buffering
 	if jumpKeyPressed
-	{ 
+	{ state = "jumping"
 		jumpKeyBufferTimer = bufferTime;}
 
 	if jumpKeyBufferTimer >0
-	{state = "jumping"
+	{
 	jumpKeyBuffered = 1;
 	jumpKeyBufferTimer --
 	
 	}
 	else 
 	{jumpKeyBuffered = 0}
+		rightKey = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(0,gp_padr)
+	leftKey = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(0,gp_padl)
 	}
+	
 //Combat Scripts
 
 //Movement Scripts
