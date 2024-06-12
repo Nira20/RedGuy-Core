@@ -1,11 +1,11 @@
-	function lineofsight()
+/*	function lineofsight()
 	{coline = 0
 	coline=collision_line(target.x, target.y,x,y,owall,1,1)
 	if coline == -4 {
 	los = false
 	}
 	else los= true
-  }
+  } */
  	function d2p()
 	{
  distance_to_player = point_distance(x, y, target.x, target.y)
@@ -27,23 +27,23 @@ if (distance_to_player < distance_threshold) && distance_to_player > distance_th
 	{state = ENEMY_STATE.ATTACK
 		sprite_index= attacksprite
 	}
-image_xscale = rightKey *-1 }
+image_xscale = -1*rightKey}
 	function emovementX(){
-	moveDir = rightKey
+	moveDir = rightKey 
 	xspeed = moveDir * moveSpeed
 	
-if active && (x >= target.x){
+if (x >= target.x){
 	rightKey = -1
 	
 			}
 		else{
 			rightKey = 1
 			
-		}
+		} 
 //actually move
  xCollisions()
 x += xspeed
-//check if player is on ground
+
 
 	}
 	function emovementY(){

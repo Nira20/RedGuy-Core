@@ -4,5 +4,8 @@
 d2p()
 if(hp <= 0) { instance_destroy(self);}
 stateMachine()
+if !invince{
 emovementX()
-emovementY()
+emovementY()}
+if !instance_exists(oattack) 
+{invince = false}

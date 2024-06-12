@@ -1,3 +1,5 @@
+debugging()
+
 /*var heart_init_x = 32;
 var heart_init_y  = 32;
 var heart_step_x  = 48; // if it's positive, the hearts will be drawn from left to right; if it's negative, they'll be drawn from right to left

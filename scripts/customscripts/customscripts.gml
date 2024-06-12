@@ -120,7 +120,8 @@ setOnGround(false)
 	jumpKey=  keyboard_check(vk_space) || keyboard_check(vk_up) || gamepad_button_check(0,gp_face1)
 
 	attackkey = mouse_check_button_pressed(mb_left) || gamepad_button_check(0,gp_face2) || keyboard_check_pressed(vk_down)
-
+	attackdiru = keyboard_check(ord("W")) 
+	attackdird = keyboard_check(ord("S")) 
 	//jump Key Buffering
 	if jumpKeyPressed
 	{ state = "jumping"
@@ -135,7 +136,7 @@ setOnGround(false)
 	else 
 	{jumpKeyBuffered = 0}
 		rightKey = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(0,gp_padr)
-	leftKey = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(0,gp_padl)
+		leftKey = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(0,gp_padl)
 	}
 	
 //Combat Scripts

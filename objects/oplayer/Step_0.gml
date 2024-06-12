@@ -9,10 +9,14 @@ if hp <=0
 }//game over condition
 if livess < 0 
 {room_restart()}
-
+if !instance_exists(oattack){
+	canFire = true
+}
 //movment and collision detection. Do not alter
-
+attackdiru = keyboard_check(ord("W")) 
+attackdird = keyboard_check(ord("S")) 
 sgetControls();
+pattackdetermine()
 //X movement 
 moveDir = rightKey - leftKey
 if moveDir != 0 {
@@ -27,12 +31,8 @@ if moveDir !=0 && onGround
 state = "moving"
 }
 if attackkey && canFire{
-		var _atk_object = instance_create_depth(x,y,depth,oattack);
-		_atk_object.owner = id;
-		_atk_object.image_xscale = image_xscale;
-		canFire = false;
-		alarm[2] = room_speed *.25;
-	}
+pattackcreate()
+}
 
 xspeed = moveDir * moveSpeed
 
@@ -122,5 +122,4 @@ ongroundCheck()
 		sprite_index  = spr_jumping
 		break;
 		
-	
-}
+	}

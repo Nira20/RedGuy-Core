@@ -1,2 +1,0 @@
-
-	other.hp -= oplayer.damage

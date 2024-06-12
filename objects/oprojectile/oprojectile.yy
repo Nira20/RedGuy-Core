@@ -1,23 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oattack",
+  "%Name":"oprojectile",
   "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"oblock","path":"objects/oblock/oblock.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"odestructable","path":"objects/odestructable/odestructable.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oattack",
+  "name":"oprojectile",
   "overriddenProperties":[],
   "parent":{
     "name":"player",
     "path":"folders/Objects/player.yy",
   },
-  "parentObjectId":{
-    "name":"oprojectile",
-    "path":"objects/oprojectile/oprojectile.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sslashu",
-    "path":"sprites/sslashu/sslashu.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

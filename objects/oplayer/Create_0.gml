@@ -8,8 +8,6 @@ canFire = true
 livess=4
 damage =1
 
-
-
 scontrolsSetup()
 //checkpoint system
 checkpointX = oRoomMove.x
@@ -34,6 +32,8 @@ onGround = true;
 	jumpHoldFrames[0] = 18;
 	jspeed[1] =-9.15 //jumpingspeed, needs to be negative
 	jumpHoldFrames[1] = 10;
+	attackdiru = false
+attackdird = false
 
 //Coyote Time
 //hangTime 
