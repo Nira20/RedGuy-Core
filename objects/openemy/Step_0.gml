@@ -1,11 +1,12 @@
-
-// Enemy Movement script
-
-d2p()
-if(hp <= 0) { instance_destroy(self);}
+//Enemy Movement script
 stateMachine()
-if !invince{
+d2p()
+if(hp <= 0) {instance_destroy(self);}
 emovementX()
-emovementY()}
+emovementY()
 if !instance_exists(oattack) 
 {invince = false}
+countKnockback()
+if knockbackcount >=20
+{resetKnockback()
+}

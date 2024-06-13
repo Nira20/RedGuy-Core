@@ -1,1 +1,1 @@
-hp -= other.damage
+applyDamage()

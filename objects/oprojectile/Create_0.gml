@@ -1,1 +1,2 @@
 canHit = true
+owner = noone;

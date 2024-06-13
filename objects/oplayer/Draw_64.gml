@@ -1,4 +1,4 @@
-debugging()
+
 
 /*var heart_init_x = 32;
 var heart_init_y  = 32;

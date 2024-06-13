@@ -1,2 +1,2 @@
 x = oplayer.x
-y = oplayer.y +32
+y = oplayer.y

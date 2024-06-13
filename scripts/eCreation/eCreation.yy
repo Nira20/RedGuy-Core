@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"GenericEnemyCreationTemplate",
+  "%Name":"eCreation",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"GenericEnemyCreationTemplate",
+  "name":"eCreation",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

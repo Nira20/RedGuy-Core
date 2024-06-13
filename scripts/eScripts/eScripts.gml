@@ -1,11 +1,4 @@
-/*	function lineofsight()
-	{coline = 0
-	coline=collision_line(target.x, target.y,x,y,owall,1,1)
-	if coline == -4 {
-	los = false
-	}
-	else los= true
-  } */
+
  	function d2p()
 	{
  distance_to_player = point_distance(x, y, target.x, target.y)
@@ -18,19 +11,19 @@ if (distance_to_player < distance_threshold) && distance_to_player > distance_th
 	        state = ENEMY_STATE.CHASE; 
 			sprite_index = chasesprite			
 	    }
-   if (  distance_to_player > distance_threshold){
+if (  distance_to_player > distance_threshold){
 			state = ENEMY_STATE.IDLE;
 			sprite_index = idlesprite
-			
 		}
-		if (distance_to_player < distance_threshold) && distance_to_player < distance_threshold/2
-	{state = ENEMY_STATE.ATTACK
-		sprite_index= attacksprite
-	}
+if (distance_to_player < distance_threshold) && distance_to_player < distance_threshold/2{
+			state = ENEMY_STATE.ATTACK;
+			sprite_index= attacksprite
+		}
 image_xscale = -1*rightKey}
-	function emovementX(){
-	moveDir = rightKey 
-	xspeed = moveDir * moveSpeed
+
+	function emovementX(){moveDir = rightKey 
+	if !knockback {xspeed = moveDir * moveSpeed}
+	else if knockback {xspeed = kb}
 	
 if (x >= target.x){
 	rightKey = -1

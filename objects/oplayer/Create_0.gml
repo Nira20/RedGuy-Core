@@ -4,16 +4,18 @@ hp = 5
 hit =false
 invincible = false
 knockingback = false
+canMove = false
 canFire = true
 livess=4
 damage =1
-
+alarm[0] =1
+alarm[1] = 5
 scontrolsSetup()
 //checkpoint system
 checkpointX = oRoomMove.x
 checkpointY = oRoomMove.y
-
-
+knockback = false
+knockbackcount = 0
 //movement, -1 left, 0 not moving, 1 right. 
 moveDir  = 0;
 moveSpeed = 12;
@@ -34,6 +36,7 @@ onGround = true;
 	jumpHoldFrames[1] = 10;
 	attackdiru = false
 attackdird = false
+attackdir = "noone" 
 
 //Coyote Time
 //hangTime 

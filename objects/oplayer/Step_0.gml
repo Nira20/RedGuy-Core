@@ -9,14 +9,19 @@ if hp <=0
 }//game over condition
 if livess < 0 
 {room_restart()}
+
+// make sure that the players attack has reset
 if !instance_exists(oattack){
 	canFire = true
 }
-//movment and collision detection. Do not alter
-attackdiru = keyboard_check(ord("W")) 
-attackdird = keyboard_check(ord("S")) 
+
+//reset knockback
+if knockbackcount >= 3 
+{resetKnockback()}
+
+//Setup player controls
 sgetControls();
-pattackdetermine()
+
 //X movement 
 moveDir = rightKey - leftKey
 if moveDir != 0 {
@@ -30,11 +35,13 @@ if moveDir !=0 && onGround
 {
 state = "moving"
 }
+pattackdetermine()
 if attackkey && canFire{
+
 pattackcreate()
 }
-
-xspeed = moveDir * moveSpeed
+if !knockback && canMove {
+xspeed = moveDir * moveSpeed }
 
 //actually move
  xCollisions()
