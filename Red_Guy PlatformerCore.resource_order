@@ -61,7 +61,6 @@
     {"name":"combat","order":7,"path":"scripts/combat/combat.yy",},
     {"name":"debugging","order":5,"path":"scripts/debugging/debugging.yy",},
     {"name":"eCreation","order":4,"path":"scripts/eCreation/eCreation.yy",},
-    {"name":"enums","order":9,"path":"scripts/enums/enums.yy",},
     {"name":"eScripts","order":2,"path":"scripts/eScripts/eScripts.yy",},
     {"name":"tutorial","order":1,"path":"scripts/tutorial/tutorial.yy",},
     {"name":"awormattack","order":1,"path":"sprites/awormattack/awormattack.yy",},
