@@ -6,12 +6,12 @@
   "name":"orock",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Enviorments",
+    "path":"folders/Objects/Enviorments.yy",
   },
   "parentObjectId":{
-    "name":"oblock",
-    "path":"objects/oblock/oblock.yy",
+    "name":"otrap",
+    "path":"objects/otrap/otrap.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -36,7 +36,7 @@ function pattackcreate(){
 
 //apply damage
 
-function applyDamage(){hp -= other.damage}
+function applyDamage(){hp -= other.damage}  
 
 //effects
 function pknockback(){

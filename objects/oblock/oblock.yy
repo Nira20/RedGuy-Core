@@ -8,10 +8,13 @@
   "name":"oblock",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Parents",
+    "path":"folders/Objects/Parents.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"osolid",
+    "path":"objects/osolid/osolid.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

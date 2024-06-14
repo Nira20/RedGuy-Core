@@ -6,10 +6,13 @@
   "name":"odestructable",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Parents",
+    "path":"folders/Objects/Parents.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"osolid",
+    "path":"objects/osolid/osolid.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

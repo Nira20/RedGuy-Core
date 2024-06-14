@@ -6,8 +6,8 @@
   "name":"oslope2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Slops",
+    "path":"folders/Objects/Enviorments/Slops.yy",
   },
   "parentObjectId":{
     "name":"owall",

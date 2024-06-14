@@ -1,0 +1,1 @@
+oplayer.yspeed =-10

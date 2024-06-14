@@ -15,14 +15,14 @@ if (  distance_to_player > distance_threshold){
 			state = "IDLE";
 			sprite_index = idlesprite
 		}
-if (distance_to_player < distance_threshold) && distance_to_player < distance_threshold/2{
-			state = "IDLE"
-			sprite_index= attacksprite
-		}
+
+		if (distance_to_player < distance_threshold) && distance_to_player < distance_threshold/2{
+			state = "ATTACK"
+			sprite_index= attacksprite}
 image_xscale = -1*rightKey}
 
 	function emovementX(){moveDir = rightKey 
-	if !knockback {xspeed = moveDir * moveSpeed}
+	if !knockback || !invince {xspeed = moveDir * moveSpeed}
 	else if knockback {xspeed = kb}
 	
 if (x >= target.x){

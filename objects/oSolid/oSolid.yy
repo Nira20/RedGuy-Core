@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oSolid",
+  "%Name":"osolid",
   "eventList":[],
   "managed":true,
-  "name":"oSolid",
+  "name":"osolid",
   "overriddenProperties":[],
   "parent":{
-    "name":"player",
-    "path":"folders/Objects/player.yy",
+    "name":"Parents",
+    "path":"folders/Objects/Parents.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -7,6 +7,6 @@ emovementY()
 if !instance_exists(oattack) 
 {invince = false}
 countKnockback()
-if knockbackcount >=20
+if knockbackcount >=5
 {resetKnockback()
 }

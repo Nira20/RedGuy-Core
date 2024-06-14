@@ -9,7 +9,10 @@
     "name":"Enviorments",
     "path":"folders/Objects/Enviorments.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"osolid",
+    "path":"objects/osolid/osolid.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
