@@ -1,6 +1,14 @@
-if armed = "disarmed"
-{armed = "arming"
-	alarm[0] = room_speed *5}
-if armed = "armed"
-{armed = "disarming"
-	alarm[0] = room_speed *5}
+if step <=3
+{
+step +=1
+alarm[0] = room_speed
+}
+if step >=4
+{pause +=1
+	alarm[0] = room_speed}
+
+if pause >=5 
+{
+step =0
+pause = 0
+}

@@ -8,9 +8,10 @@ canMove = false
 canFire = true
 livess=4
 damage =1
-alarm[0] =1
+alarm[0] = 1
 alarm[1] = 5
 scontrolsSetup()
+kbtimer = 1
 //checkpoint system
 checkpointX = oRoomMove.x
 checkpointY = oRoomMove.y

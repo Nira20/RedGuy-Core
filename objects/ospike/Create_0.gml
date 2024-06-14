@@ -1,2 +1,1 @@
-armed = "disarmed"
-alarm[0] = 15
+cspike()
