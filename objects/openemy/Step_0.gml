@@ -4,7 +4,7 @@ d2p()
 if(hp <= 0) {instance_destroy(self);}
 emovementX()
 emovementY()
-if !instance_exists(oattack) 
+if invince = true && !instance_exists(oprojectile) 
 {invince = false}
 countKnockback()
 if knockbackcount >=5

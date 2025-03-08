@@ -26,7 +26,8 @@ function pattackcreate(){
 		break;
 		
 	case "down": 
-		_atk_object = instance_create_depth(x,y+oplayer.sprite_height/2,depth,oattackd);
+		_atk_object = instance_create_depth(x, oplayer.bbox_bottom
+,depth,oattackd);
 		_atk_object.owner = id;
 		_atk_object.image_xscale = image_xscale;
 		break;

@@ -21,37 +21,3 @@ if (  distance_to_player > distance_threshold){
 			sprite_index= attacksprite}
 image_xscale = -1*rightKey}
 
-	function emovementX(){moveDir = rightKey 
-	if !knockback || !invince {xspeed = moveDir * moveSpeed}
-	else if knockback {xspeed = kb}
-	
-if (x >= target.x){
-	rightKey = -1
-	
-			}
-		else{
-			rightKey = 1
-			
-		} 
-//actually move
- xCollisions()
-x += xspeed
-
-
-	}
-	function emovementY(){
-if yspeed>=0 && place_meeting(x, y+1, owall)
- {
-	onGround=true;
-	 } else {onGround =false}
-	 //apply gravity
-	 
- if !onGround{
- gravi()
- termVelo()
- }
-
-yCollisions()
-
- y+= yspeed
-}

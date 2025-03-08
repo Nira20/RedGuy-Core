@@ -1,10 +1,7 @@
 
 function cspike(){
-step = 0
-pause = 0
-alarm[0] = room_speed  *1
-sX = x
-sY= y
+
+alarm[0] = room_speed  *1   
 damage =1
 kbtimer = .2
 }
